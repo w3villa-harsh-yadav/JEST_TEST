@@ -1,0 +1,42 @@
+{
+    "SOCKET_URLS": {
+    },
+
+    "GAME_READER_URLS": {
+        "leaderboard":{
+            "name":"LEADERBOARD API",
+            "method":"GET",
+            "url":"api/leaderboard",
+            "body":{}
+        },
+        "gametools":{
+            "name":"GAME TOOLS API",
+            "method":"GET",
+            "url":"api/getGameTools",
+            "body":{}
+        }
+    },
+
+    "GAME_WRITER_URLS": {
+        "joinlobby":{
+            "name":"JOIN LOBBY API",
+            "method":"POST",
+            "url":"api/lobby/join",
+            "body": {
+                "objectId": "3",
+                "memberId": "12345678",
+                "uName": "Hash",
+                "lobbyId": "jobs-qd2-8b6a4637-1865-4e3c-921d-2d620d1a7211",
+                "lang": "en",
+                "subCategoryId": "37",
+                "referenceId":"24d23307-177d-49be-98b1-287e98dee823"
+            }
+        }
+    },
+
+    "AFFLIATE_READER_URLS": {
+    },
+
+    "AFFLIATEWRITER_URLS": {
+    }
+}

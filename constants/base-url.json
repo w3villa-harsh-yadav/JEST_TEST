@@ -1,0 +1,30 @@
+{
+    "quickdev1":{
+        "SOCKET_URL": "wss://quickdev1.super.one/ws/",
+        "GAME_READER_URL": "https://quickdev1.super.one/gamereaderapi/",
+        "GAME_WRITER_URL": "https://quickdev1.super.one/qms/",
+        "AFFLIATE_READER_URL": "https://quickdev1.super.one/reader/",
+        "AFFLIATEWRITER_URL": "https://quickdev1.super.one/writer/"
+    },
+    "quickdev2":{
+        "SOCKET_URL": "wss://quickdev2.super.one/ws/",
+        "GAME_READER_URL": "https://quickdev2.super.one/gamereaderapi/",
+        "GAME_WRITER_URL": "https://quickdev2.super.one/qms/",
+        "AFFLIATE_READER_URL": "https://quickdev2.super.one/reader/",
+        "AFFLIATE_WRITER_URL": "https://quickdev2.super.one/writer/"
+    },
+    "quickdev3":{
+        "SOCKET_URL": "wss://quickdev3.super.one/ws/",
+        "GAME_READER_URL": "https://quickdev3.super.one/gamereaderapi/",
+        "GAME_WRITER_URL": "https://quickdev3.super.one/qms/",
+        "AFFLIATE_READER_URL": "https://quickdev3.super.one/reader/",
+        "AFFLIATE_WRITER_URL": "https://quickdev3.super.one/writer/"
+    },
+    "quickdev4":{
+        "SOCKET_URL": "wss://quickdev4.super.one/ws/",
+        "GAME_READER_URL": "https://quickdev4.super.one/gamereaderapi/",
+        "GAME_WRITER_URL": "https://quickdev4.super.one/qms/",
+        "AFFLIATE_READER_URL": "https://quickdev4.super.one/reader/",
+        "AFFLIATE_WRITER_URL": "https://quickdev4.super.one/writer/"
+    }
+}

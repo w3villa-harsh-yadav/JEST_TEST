@@ -1,0 +1,8 @@
+{
+    "affiliateDB": {
+        "host": "quickdev-db.cluster-cla9jbugaywl.eu-west-2.rds.amazonaws.com",
+        "user": "admin",
+        "password": "superone_stage!",
+        "database": "quickdev1"
+    }
+}
