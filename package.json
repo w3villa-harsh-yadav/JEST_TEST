@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest test/index.test.ts ",
+    "test:login": "jest test/login.test.ts"
   },
   "jest": {
     "preset": "ts-jest",
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "testMatch": ["**/*.test.ts"]
   },
   "keywords": [],
   "author": "",
@@ -21,6 +23,8 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "async": "^3.2.4",
+    "async-waterfall": "^0.1.5",
     "axios": "^1.5.1"
   }
 }

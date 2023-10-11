@@ -9,10 +9,16 @@
             "url":"api/leaderboard",
             "body":{}
         },
-        "gametools":{
-            "name":"GAME TOOLS API",
+        "gameTools":{
+            "name":"GAMETOOLS API",
             "method":"GET",
             "url":"api/getGameTools",
+            "body":{}
+        },
+        "gameReward":{
+            "name":"GAMEREWARD API",
+            "method":"GET",
+            "url":"api/game/reward",
             "body":{}
         }
     },
@@ -26,7 +32,7 @@
                 "objectId": "3",
                 "memberId": "12345678",
                 "uName": "Hash",
-                "lobbyId": "jobs-qd2-8b6a4637-1865-4e3c-921d-2d620d1a7211",
+                "lobbyId": "jobs-qd1-c8b93ec4-24e1-402f-b306-61c640a834d4",
                 "lang": "en",
                 "subCategoryId": "37",
                 "referenceId":"24d23307-177d-49be-98b1-287e98dee823"
@@ -38,5 +44,17 @@
     },
 
     "AFFLIATEWRITER_URLS": {
+        "login":{
+            "name":"LOGIN API",
+            "method":"PATCH",
+            "url":"user/email/login",
+            "body": {
+                "email":"harshyadav78200@gmail.com",
+                "password":"Test@123",
+                "deviceToken":"cxAQIvKp6YV_k-1OBPkVfL:APA91bHW75RCkX475zOSGzos9n7Evq81R3_MlrNz9H_m9nSGQPebwtzw2MWeTliOg5dsqLcfY-QE3QhdBBsyAoUu16ehTo028ntBDEAdoFO-naSUFxF5tKI5q9K6AF8ESvBdxYqDceHt",
+                "pwaDevice":"Linux",
+                "deviceType":"WEB"
+            }
+        }
     }
 }
