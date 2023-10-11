@@ -1,4 +1,4 @@
-module.exports.unAuthorizedApi = async(prevResult: any) => {
+export const unAuthorizedApi = async(prevResult: any) => {
     return await new Promise<Boolean>((resolve,reject)=>{
         try {
             const {
