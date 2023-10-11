@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const callApi = async(url: string, method: string, headers: {}, body: {})=>{
+export const callApi = async(url: string, method: string, headers: {}, body: {})=>{
     try {
         return await new Promise<any>((resolve,reject)=>{
             axios({
@@ -18,9 +18,4 @@ const callApi = async(url: string, method: string, headers: {}, body: {})=>{
         console.log("ERROR:::::::::",error)
         return
     }
-}
-
-
-module.exports = {
-    callApi
 }
