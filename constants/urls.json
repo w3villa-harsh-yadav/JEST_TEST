@@ -32,7 +32,7 @@
                 "objectId": "3",
                 "memberId": "12345678",
                 "uName": "Hash",
-                "lobbyId": "jobs-qd1-1db6b56e-b083-4267-9162-b7b4ab788d12",
+                "lobbyId": "jobs-qd1-e5bc359d-7d18-415b-ac1b-537ca6b95a01",
                 "lang": "en",
                 "subCategoryId": "37",
                 "referenceId":"24d23307-177d-49be-98b1-287e98dee823"
@@ -43,7 +43,7 @@
     "AFFLIATE_READER_URLS": {
     },
 
-    "AFFLIATEWRITER_URLS": {
+    "AFFLIATE_WRITER_URLS": {
         "login":{
             "name":"LOGIN API",
             "method":"PATCH",

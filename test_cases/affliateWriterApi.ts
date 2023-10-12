@@ -1,36 +1,24 @@
+export const affliateWriterApi = async(apiDetails: any,apiName: string):Promise<any> => {
+    try {
+        const {
+            base_url,
+            headers,
+            callApi,
+            urls,
+            MAINTENANCE,
+            server
+        } = apiDetails;
+        const baseUrl = base_url[server].AFFLIATE_WRITER_URL;
+        const AFFLIATE_WRITER_API = urls.AFFLIATE_WRITER_URLS[apiName];
+        const url = baseUrl+AFFLIATE_WRITER_API.url;
+        const method = AFFLIATE_WRITER_API.method;
+        const body = AFFLIATE_WRITER_API.body;
+        const data = await callApi(url,method,headers,body);
+        console.log(`${AFFLIATE_WRITER_API.name}::::::Done`);
+        return data;
+    } catch (error:any) {
+        console.error("ERROR IN GAME READER:::::::",error);
+        return false
+    }
 
-module.exports.affliateWriterapi = async(callApi: any,base_url: any,headers: any,urls: any,MAINTENANCE: any) => {
-    const baseUrl = base_url.quickdev1.AFFLIATEWRITER_URL;
-    const AFFLIATEWRITER_API = urls.AFFLIATEWRITER_URLS
-    const apis = Object.keys(AFFLIATEWRITER_API);
-
-    test("Unauthorized API", async()=>{
-        const url = baseUrl+urls.AFFLIATEWRITER_URLS.leaderboard.url;
-        const method = urls.AFFLIATEWRITER_URLS.leaderboard.method;
-        const body = urls.AFFLIATEWRITER_URLS.leaderboard.body;
-        const data = await callApi(url,method,{},body);
-        expect(data).toEqual("Unauthorized");
-    });
-
-    // Looping through the Game Reader Apis
-    apis.map( (keys) => {
-        test(`${AFFLIATEWRITER_API[keys].name}`, async () => {
-            const url = baseUrl+AFFLIATEWRITER_API[keys].url;
-            const method = AFFLIATEWRITER_API[keys].method;
-            const body = AFFLIATEWRITER_API[keys].body;
-            const data = await callApi(url,method,headers,body);
-            console.log(`${AFFLIATEWRITER_API[keys].name}:::`,data);
-            if( MAINTENANCE ) {
-                expect(data).toHaveProperty("success",false);
-                expect(data).toHaveProperty("message");
-                expect(data).toHaveProperty("data");
-                expect(data).toHaveProperty("display");
-            } else {
-                expect(data).toHaveProperty("success",true);
-                expect(data).toHaveProperty("message");
-                expect(data).toHaveProperty("data");
-                expect(data).toHaveProperty("display");
-            }
-        });
-    })
   }
