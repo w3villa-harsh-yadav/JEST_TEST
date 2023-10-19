@@ -7,19 +7,84 @@
             "name":"LEADERBOARD API",
             "method":"GET",
             "url":"api/leaderboard",
-            "body":{}
+            "body":{},
+            "response":{
+                "message": "Leaderboard listing found successfully.",
+                "success": true,
+                "display": false,
+                "data": {
+                  "LeaderboardHistory": [],
+                  "selfData": {
+                    "playerId": 118496,
+                    "name": "Harshyadav",
+                    "image": "https://lh3.googleusercontent.com/a/AAcHTtc8Okt7SimnQkItVy3vS7ZAUzT_oUQbbWt5LmEjE1TcxA=s96-c",
+                    "rank": 0,
+                    "value": 0,
+                    "rankChange": 0,
+                    "mostPlayedclubId": 6,
+                    "flagCode": "India"
+                  },
+                  "filter": {
+                    "metrics": "amount",
+                    "parentTagId": 3,
+                    "subCategoryId": -1,
+                    "CategoryId": -1,
+                    "month": 10,
+                    "year": 2023,
+                    "lang": "en"
+                  },
+                  "currentPage": 1,
+                  "pageCap": -1
+                }
+              }
         },
         "gameTools":{
             "name":"GAMETOOLS API",
             "method":"GET",
             "url":"api/getGameTools",
-            "body":{}
+            "body":{},
+            "response":{
+                "message": "Tools details found successfully",
+                "success": true,
+                "display": false,
+                "data": {
+                  "tools": {
+                    "1": [
+                      -1,
+                      -1,
+                      -1
+                    ],
+                    "2": [
+                      -1,
+                      -1,
+                      -1
+                    ],
+                    "3": [
+                      -1,
+                      -1,
+                      -1
+                    ]
+                  },
+                  "cooldownTimeDuration": 300000,
+                  "credits": 0
+                }
+              }
         },
         "gameReward":{
             "name":"GAMEREWARD API",
             "method":"GET",
             "url":"api/game/reward",
-            "body":{}
+            "body":{},
+            "response":{
+                "message": "Success",
+                "success": true,
+                "display": false,
+                "data": {
+                    "reward": {
+                    "balance": 8
+                    }
+                }
+            }
         }
     },
 
@@ -32,10 +97,20 @@
                 "objectId": "3",
                 "memberId": "12345678",
                 "uName": "Hash",
-                "lobbyId": "jobs-qd1-e5bc359d-7d18-415b-ac1b-537ca6b95a01",
+                "lobbyId": "jobs-qd1-2f2f5b2b-f655-459b-80ad-716e070af280",
                 "lang": "en",
                 "subCategoryId": "37",
                 "referenceId":"24d23307-177d-49be-98b1-287e98dee823"
+            },
+            "response":{
+                "message": "Lobby joined successfully.",
+                "success": true,
+                "display": false,
+                "data": {
+                  "startTime": 1697523600001,
+                  "activeUserCount": 0,
+                  "lobbyId": "jobs-qd1-7a4300e7-9172-4014-a1a6-f192a95a3365"
+                }
             }
         }
     },
@@ -54,7 +129,40 @@
                 "deviceToken":"cxAQIvKp6YV_k-1OBPkVfL:APA91bHW75RCkX475zOSGzos9n7Evq81R3_MlrNz9H_m9nSGQPebwtzw2MWeTliOg5dsqLcfY-QE3QhdBBsyAoUu16ehTo028ntBDEAdoFO-naSUFxF5tKI5q9K6AF8ESvBdxYqDceHt",
                 "pwaDevice":"Linux",
                 "deviceType":"WEB"
-            }
+            },
+            "response":{
+                "message": "Logged in with email.",
+                "success": true,
+                "display": false,
+                "data": {
+                  "id": 102944,
+                  "email": "harshyadav@gmail.com",
+                  "mobileNo": null,
+                  "firstName": "Harsh",
+                  "lastName": "Yadav",
+                  "imageUrl": "https://lh3.googleusercontent.com/a/AAcHTtc8Okt7SimnQkItVy3vS7ZAUzT_oUQbbWt5LmEjE1TcxA=s96-c",
+                  "countryName": "India",
+                  "countryFlagImage": null,
+                  "mobileNoVerified": false,
+                  "emailVerified": true,
+                  "countryCode": "+91",
+                  "socialDone": true,
+                  "nextAction": "NONE",
+                  "member": 118496,
+                  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwMjk0NCwiaWF0IjoxNjk3NDM4ODQ4LCJleHAiOjE3MDAwMzA4NDh9.dMUajtoPl2cWRF4dh4xSPQMRiFDNYNHj9Z6JVpNIgGg",
+                  "memberType": "FREE",
+                  "isPasscodeSet": false,
+                  "passwordSet": true,
+                  "userName": "Harshyadav",
+                  "referralCode": "kXwIAkEwsG",
+                  "referralLink": "https://super.one/kXwIAkEwsG",
+                  "updateReferral": true,
+                  "isNewUser": false,
+                  "appLang": "en",
+                  "gameLang": "en",
+                  "lastLogout": "AFFILIATE"
+                }
+              }
         }
     }
 }

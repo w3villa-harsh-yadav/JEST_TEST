@@ -13,8 +13,10 @@ export const affliateWriterApi = async(apiDetails: any,apiName: string):Promise<
         const url = baseUrl+AFFLIATE_WRITER_API.url;
         const method = AFFLIATE_WRITER_API.method;
         const body = AFFLIATE_WRITER_API.body;
+        const beforetime = new Date().getTime();
         const data = await callApi(url,method,headers,body);
-        console.log(`${AFFLIATE_WRITER_API.name}::::::Done`);
+        const aftertime = new Date().getTime();
+        console.log(`${AFFLIATE_WRITER_API.name}::::::Done`,aftertime-beforetime);
         return data;
     } catch (error:any) {
         console.error("ERROR IN GAME READER:::::::",error);
