@@ -30,7 +30,6 @@ export const validators : any = {
 
     primaryIdValidator:(key:String,id:Number)=>{
         let pass = joi.number().strict().integer().min(0).validate(id);
-        console.log(pass)
         if(pass.error){
             console.error(`KEY:::::::${key}`,pass)
             return false

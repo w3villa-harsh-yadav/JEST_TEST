@@ -5,6 +5,7 @@ jest.setTimeout(10000);
 
 describe('AFTER LOGIN API TESTS', () => {
   config.affliateWriterSuit.login(config.apiDetails)
+  config.unAuthorizedSuit.unAuthorized(config.apiDetails)
   // for(let i = 0;i<=10;i++){
   //   config.gameReaderSuit.leaderboard(config.apiDetails)
   // }

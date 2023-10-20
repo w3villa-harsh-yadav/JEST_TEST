@@ -5,11 +5,12 @@ import urls from './../constants/urls.json';
 import { affliateWriterSuit } from '../test_suites/affliateWriterSuit';
 import { gameReaderSuit } from '../test_suites/gameReaderSuit';
 import { gameWriterSuit } from '../test_suites/gameWriterSuit';
+import { unAuthorizedSuit } from '../test_suites/unauthorizedSuit';
 import responses from '../constants/responses.json';
 
 let token: String = "";
 let MAINTENANCE = false;
-let server = "quickdev1";
+let server = "quickdev4";
 
 // Type for ApiDetails
 type apiDetails = {
@@ -38,5 +39,6 @@ export let config = {
   affliateWriterSuit,
   gameReaderSuit,
   gameWriterSuit,
+  unAuthorizedSuit,
   apiDetails
 }
